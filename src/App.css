@@ -47,25 +47,3 @@ h1 {
   color: #efb7b7;
 }
 
-@media screen and (max-width: 768px){
-  .wrapper_content{
-    width: 95%;
-  }
-
-  .InputItem input{
-    width: 88% !important;
-    padding: 0 !important;
-    font-size: 20px;
-  }
-  .Item{
-    font-size: 20px !important;
-  }
-  .Counter{
-    justify-content: flex-end !important;
-  }
-  img.down_arrow {
-    width: 18px  !important;
-    margin-right: 10px  !important;
-    padding-left: 18px !important;
-}
-}

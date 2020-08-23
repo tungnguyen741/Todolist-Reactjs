@@ -5,7 +5,7 @@ import InputItem from './components/InputItem';
 import TodoItem from './components/TodoItem';
 import ModalEdit from './components/ModalEdit'
 import Counter from './components/Counter'
-
+import './components/Responsive.css'
 import cross from './Img/cross.svg'
 import tick from './Img/tick.svg'
 import untick from './Img/untick.svg'

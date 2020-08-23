@@ -16,6 +16,7 @@
 .InputItem {
     border-bottom: 1px solid #efefef;
     display: flex;
+    justify-content: center;
 }
 img.down_arrow {
     width: 20px;
