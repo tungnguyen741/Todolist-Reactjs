@@ -2,12 +2,11 @@
     .wrapper_content{
       width: 95%;
     }
-  
-    .InputItem input{
-      width: 88% ;
-      padding: 0 ;
-      font-size: 20px;
-    }
+   
+    .InputItem input {
+      width: 65%;
+      padding: 0px 50px 0px 10px;
+  }
     .InputItem input::placeholder{
         font-size: 20px;
     }
@@ -19,8 +18,10 @@
       justify-content: flex-end ;
     }
     img.down_arrow {
-      width: 18px  ;
-      margin-right: 10px  ;
-      padding-left: 18px ;
+      width: 20px;
+      opacity: .4;
+      padding-right: 0px;
+      margin-right: 0px;
   }
+
   }
