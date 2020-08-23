@@ -1,0 +1,28 @@
+.InputItem input {
+    width: 65%;
+    padding: 0 50px 0px 0px;
+    height: 55px;
+    border: 0;
+    font-size: 28px;  
+}
+.InputItem input:focus{
+    outline: none;
+}
+.InputItem input::-webkit-input-placeholder { /* Edge */
+    font-style: italic;
+    opacity: .3;
+    font-size: 28px;    
+}
+.InputItem {
+    border-bottom: 1px solid #efefef;
+    display: flex;
+}
+img.down_arrow {
+    width: 20px;
+    margin-right: 15px;
+    padding-left: 28px;
+    opacity: .4;
+}
+img.down_arrow:hover{
+    cursor: pointer;
+}

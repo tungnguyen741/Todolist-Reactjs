@@ -1,0 +1,50 @@
+.TodoItem {
+    text-align: left;
+}
+.Item {
+    padding: 11px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s all;
+    font-size: 22px;
+    border-top: 1px solid #efefef;
+}
+.Item:first-child{
+    border-top: 0;
+}
+.btn_remove{
+    border: 0;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    padding-right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s all;
+}
+
+button.btn_remove img {
+    width: 10px;
+}
+.btn_remove:focus{
+    outline: none;
+}
+.Item:hover .btn_remove{
+    opacity: 1;
+    visibility: visible;
+}
+.Item .tick {
+    width: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}   
+.isDone{
+    text-decoration: line-through;
+    opacity: .3;
+}
+span.item_content {
+    flex-grow: 1;
+}
