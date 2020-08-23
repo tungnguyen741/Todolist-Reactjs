@@ -21,6 +21,10 @@ export default class InputItem extends Component{
             {this.props.isShowCounter && <img onClick={this.props.setAllDone} className="down_arrow" src={down_arrow} alt="down_arrow"/>}
             <input onKeyDown={(e) => {
                 if (e.key === 'Enter'){
+                    if(!this.state.value){
+                        alert("invalid value");
+                        return;
+                    }
                     this.props.addNewItem({name: this.state.value, isDone: false});
                     this.inputValue.current.value = "";
                 }
