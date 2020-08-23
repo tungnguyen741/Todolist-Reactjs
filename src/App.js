@@ -119,7 +119,7 @@ class App extends Component {
         <div className="wrapper_content">
           <InputItem isShowCounter={isShowCounter} setAllDone={this.setAllDone} addNewItem={this.addNewItem} ></InputItem>
           <TodoItem data = {this.state.data} showEdit = {this.state.showEdit} render={ item => <div
-                 className={item.isDone ? "Item isDone" : "Item"}>
+                 className={item.isDone ? "Item isDone" : "Item"} onClick={() => this.handleIsDone(item)} >
                     <img  onClick={() => this.handleIsDone(item)}  className="tick" src={item.isDone ? tick : untick} alt="tick"/>
                     <span className="item_content">{item.name} </span>
                     <button className="btn_remove" onClick={() => this.removeItem(item)} > 
