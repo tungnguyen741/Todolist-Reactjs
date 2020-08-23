@@ -103,6 +103,7 @@ class App extends Component {
       this.setState({data: dataNew});
     }
     render(){
+      const data = JSON.parse(localStorage.getItem("data"));
       let isShowCounter = true;
       if(this.state.data){
         if( !this.state.data.length){
@@ -132,7 +133,7 @@ class App extends Component {
          
           {this.state.showEdit && <ModalEdit changeNewItem={this.changeNewItem} indexItem={this.state.vitri + 1} />}
           
-          { isShowCounter && <Counter btn_controll={this.state.btn_controll} getAll={this.getAll} getActive={this.getActive} getDone={this.getDone} data={this.state.data} /> }
+          { isShowCounter && <Counter btn_controll={this.state.btn_controll} getAll={this.getAll} getActive={this.getActive} getDone={this.getDone} data={data} /> }
          
         </div>
       </div>
