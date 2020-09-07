@@ -69,6 +69,9 @@ button.btn_getDone:hover{
     color: #fff !important;
     border: 1.5px solid #ed4d6e;
 }
+.btn::selection{
+    background:transparent
+}
 /* background-color: #deb986;  
 background-color: #db6c79;
 background-color: #ed4d6e; */

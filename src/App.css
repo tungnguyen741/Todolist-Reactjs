@@ -47,3 +47,6 @@ h1 {
   color: #efb7b7;
 }
 
+.item_content::selection, .btn_remove::selection{
+  background: transparent;
+}
